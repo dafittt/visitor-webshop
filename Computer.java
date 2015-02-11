@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class Computer extends Item {
-	
 	ArrayList<Item> components = new ArrayList<Item>();
 
 	@Override
@@ -13,5 +12,4 @@ public class Computer extends Item {
 	public void addComponent( Item component ){
 		components.add( component );
 	}
-
 }

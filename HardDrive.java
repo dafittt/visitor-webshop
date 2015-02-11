@@ -1,6 +1,4 @@
-
 public class HardDrive extends Item {
-	
 	public HardDrive( String name, float price ){
 		this.name = name;
 		this.price = price;
@@ -11,6 +9,5 @@ public class HardDrive extends Item {
 		visitor.visit( this );
 	}
 	
-	//class specific methods
-
+	// class specific methods go here
 }

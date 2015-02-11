@@ -1,15 +1,12 @@
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-
 public class ListItemsVisitor implements Visitor {
-	
 	HashMap<String, Float> computerParts = 	new HashMap<String, Float>();
 	HashMap<String, Float> periphery = 		new HashMap<String, Float>();
 
-	
-	//Visitors
-	
+	// Visitors
+
 	@Override
 	public void visit( Computer computer ) {
 		computerParts.put( computer.getName(), computer.getPrice() );
@@ -31,10 +28,10 @@ public class ListItemsVisitor implements Visitor {
 	}
 	
 	
-	//-------------------------------------------------------
-	//Utility functions
-	
-	public void printItemNames(  ){
+	// -------------------------------------------------------
+	// Utility functions
+
+	public void printItemNames(){
 		System.out.println( "Items in cart:" );
 		for( Entry<String, Float> entry : computerParts.entrySet() ) {
 			System.out.println( entry.getKey() );
@@ -44,7 +41,7 @@ public class ListItemsVisitor implements Visitor {
 		}
 	}
 	
-	public void printFormattedList(  ){
+	public void printFormattedList(){
 		System.out.println( "Formatted list:" );
 		System.out.println( "Computer Parts:" );
 		for( Entry<String, Float> entry : computerParts.entrySet()) {
@@ -58,7 +55,4 @@ public class ListItemsVisitor implements Visitor {
 			System.out.println( line );
 		}
 	}
-
-
-
 }

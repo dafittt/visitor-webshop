@@ -1,9 +1,7 @@
-
 public class CostVisitor implements Visitor {
-	
 	private float sum = 0;
 
-	//Visitors
+	// Visitors
 	
 	@Override
 	public void visit( Computer computer ) {
@@ -26,9 +24,8 @@ public class CostVisitor implements Visitor {
 		sum += hdd.getPrice(  );
 	}	
 	
-	
-	//-------------------------------------------------------
-	//Utility Functions
+	// -------------------------------------------------------
+	// Utility Functions
 	
 	public float getSum(  ){
 		float versand = 3;

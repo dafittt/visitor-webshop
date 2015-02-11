@@ -1,6 +1,4 @@
-
 public class Printer extends Item {
-
 	public Printer( String name, float price ){
 		this.name = name;
 		this.price = price;
@@ -10,5 +8,4 @@ public class Printer extends Item {
 	public void accept( Visitor visitor ) {
 		visitor.visit( this );
 	}
-
 }
